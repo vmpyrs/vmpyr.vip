@@ -1,4 +1,4 @@
-local Particle = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/vmpyrs/vmpyr.vip/refs/heads/main/data/particle.lua"))()
+local Particle = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/vmpyrs/vmpyr.vip/refs/heads/main/modules/particle.lua"))()
 local RunService = game:GetService("RunService")
 
 local ParticleEmitter = {}
