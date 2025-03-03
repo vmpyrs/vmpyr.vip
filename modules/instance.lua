@@ -6,7 +6,7 @@ instance.new = function(class_name, properties, parent)
 
     function self:tween(goal, play, wait_until, tween_info)
         tween_info = tween_info or TweenInfo.new(0.6)
-        local tween = roblox.TweenService:Create(self.instance, tween_info, goal)
+        local tween = game:GetService("TweenService"):Create(self.instance, tween_info, goal)
         if play then
             tween:Play()
         end
