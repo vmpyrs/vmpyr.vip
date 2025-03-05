@@ -10,9 +10,10 @@ signal.new = function()
     end
 
     function self:fire(...)
+        local args = {...}
         for _, callback in next, self.connections do
             spawn(function()
-                callback(...)
+                callback(unpack(args))
             end)
         end
     end
