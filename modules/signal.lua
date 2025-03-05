@@ -11,7 +11,9 @@ signal.new = function()
 
     function self:fire(...)
         for _, callback in next, self.connections do
-            spawn(callback, ...)
+            spawn(function()
+                callback(...)
+            end)
         end
     end
 
