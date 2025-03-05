@@ -106,12 +106,12 @@ function Luxt1.CreateWindow(libName, logoId)
     pageFolder.Parent = framesAll
 
     --
-    libName = libName or "LuxtLib"
+    libName = libName or "vmpyr.vip"
     logoId = logoId or ""
     --
 
-    LuxtLib.Name = "LuxtLib"..libName
-    LuxtLib.Parent = game.CoreGui
+    LuxtLib.Name = "vmpyr.vip"
+    LuxtLib.Parent = gethui and gethui() or game.CoreGui
     LuxtLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
     MainFrame.Name = "MainFrame"
