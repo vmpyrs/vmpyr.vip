@@ -5,7 +5,7 @@ instance.new = function(class_name, properties, parent)
     self.instance = Instance.new(class_name)
 
     function self:tween(goal, play, wait_until, tween_info)
-        tween_info = tween_info or TweenInfo.new(0.2)
+        tween_info = tween_info or TweenInfo.new(0.4)
         local tween = game:GetService("TweenService"):Create(self.instance, tween_info, goal)
         if play then
             tween:Play()
